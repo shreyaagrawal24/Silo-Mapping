@@ -1,0 +1,11 @@
+{
+    "sanjivaniFlag": true,
+    "sanjivaniLoopChangeImageCount": 30,
+    "sanjivaniLoopChangeTimeInMs": 5,
+    "sanjivaniSiloMap": {
+        "1":"Recipe_3",
+        "2":"Recipe_1",
+        "3":"Recipe_2",
+        "4":"Recipe_Unknown"
+    }
+}

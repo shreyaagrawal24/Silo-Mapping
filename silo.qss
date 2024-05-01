@@ -1,0 +1,181 @@
+/* Styles for leftWidget */
+#leftWidget {
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid black;
+}
+
+/* Styles for scroll area widget of silos */
+#silosScrollAreaWidget {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+/* Styles for empty silo */
+QWidget [silo = "empty"] {
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    border: 3px solid #F66151;
+}
+
+/* Styles for filled silo */
+QWidget [silo = "filled"] {
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    border: 3px solid green;
+}
+
+/* Styles for clicked silo */
+QWidget [silo = "clicked"] {
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    border: 3px solid #B2B2B2;
+}
+
+/* Styles for silo label in silo widget */
+#siloLabel {
+    border: none;
+    font: 20pt;
+}
+
+/* Styles for silo image label in silo widget */
+#siloImageLabel {
+    border: none;
+}
+
+/* Styles for recipe label in silo widget */
+#recipeLabel {
+    border: none;
+    font: 16pt;
+}
+
+/* Styles for rightWidget */
+#rightWidget {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Styles for recipe display widget */
+#recipeDisplayWidget {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* Styles for recipe scroll area */
+#recipesScrollArea {
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0px;
+    spacing: 0;
+}
+
+/* Styles for recipe scroll area widget */
+#scrollAreaWidgetContents_2 {
+    background-color: rgb(255, 255, 255);
+    spacing: 0;
+}
+
+/* Styles for recipe display widget's header */
+#recipeListHeader {
+    background-color: rgb(225, 241, 255);
+    border: 1px solid black;
+    border-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Styles for recipe display widget's footer */
+#recipeListFooter {
+    background-color: rgb(225, 241, 255);
+    border-top: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Styles for connected recipe */
+#connected {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #C7FF9B, stop: 1 #C7FF9B);
+    border-bottom: 1px solid black;
+    border-top: none;
+}
+
+/* Styles for disconnected recipe */
+#disconnected {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #F5A7A2, stop: 1 #F5A7A2);
+    border-bottom: 1px solid black;
+    border-top: none;
+}
+
+/* Styles for silo label in recipe button */
+#siloLabel2 {
+    border: none;
+}
+
+/* Styles for recipe label in recipe button */
+#recipeLabel2 {
+    border: none;
+    font: 16pt;
+}
+
+/* Styles for clear recipe button */
+#clearRecipeBtn {
+    background-color: rgb(245, 167, 162);
+    border-radius: 10px;
+}
+
+/* Styles for add and remove silo widget */
+#addRemSilosWidget {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* Styles for add and remove silo widget's header */
+#addRemHeader {
+    background-color: rgb(225, 241, 255);
+    border: 1px solid black;
+    border-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Styles for add and remove silo widget's footer */
+#addRemFooter {
+    background-color: rgb(225, 241, 255);
+    border-top: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Styles for remove button */
+#removeBtn {
+    background-color: rgb(245, 167, 162);
+    border: none;
+    border-radius: 10px;
+}
+
+/* Styles for add button */
+#addBtn {
+    background-color: rgb(199, 255, 155);
+    border: none;
+    border-radius: 10px;
+}
+
+/* Styles for reset button */
+#resetBtn {
+    background-color: rgb(245, 167, 162);
+    border-radius: 10px;
+}
+
+/* Styles for save button */
+#saveBtn {
+    background-color: rgb(199, 255, 155);
+    border-radius: 10px;
+}
+

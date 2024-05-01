@@ -1,0 +1,268 @@
+{
+	"Recipes": {
+		"Recipe_1": {
+			"ClassifierSelection": {
+				"AllPolymers": {
+					"7_Aug_HDPE_Black": 0,
+					"7_Aug_HDPE_Blue": 1,
+					"7_Aug_HDPE_Green": 0,
+					"7_Aug_HDPE_Like_Blue_Milky": 0,
+					"7_Aug_HDPE_Milky": 0,
+					"7_Aug_HDPE_Natural_HD": 0,
+					"7_Aug_HDPE_Red": 0,
+					"7_Aug_HDPE_Silver": 0,
+					"7_Aug_HDPE_Yellow": 0,
+					"7_Aug_LDPE_Natural": 0,
+					"7_Aug_PET_Black_Brown_Bottle": 0,
+					"7_Aug_PET_Blue_Bottle": 0,
+					"7_Aug_PET_Cans": 0,
+					"7_Aug_PET_Green_Bottle": 0,
+					"7_Aug_PET_Jar": 0,
+					"7_Aug_PET_Natural_Bottle": 0,
+					"7_Aug_PET_Red_Bottle": 0,
+					"7_Aug_PET_White_Bottle": 0,
+					"7_Aug_PET_Yellow_Bottle": 0,
+					"7_Aug_PP_Black_Container": 0,
+					"7_Aug_PP_Black_Tray": 0,
+					"7_Aug_PP_Bottle_Mix": 1,
+					"7_Aug_PP_Daat_Mix": -1,
+					"7_Aug_PP_Farra": 0,
+					"7_Aug_PP_Natural_Daat": 1,
+					"7_Aug_PP_Natural_Jar_Bottle": 1,
+					"7_Aug_PP_White_Bottle": 0,
+					"7_Aug_PP_White_Daat_Container": 0,
+					"7_Aug_PP_White_Tray": 0,
+					"7_Aug_PVC": -1,
+					"7_Aug_Thermos": -1
+				},
+				"Label_Unlabel": {
+					"Label_Unlabel_Labelled": 0
+				}
+			},
+			"DetectionFlags": {
+				"objectDetection": false,
+				"colorDetection": true
+			}
+		},
+		"Recipe_2": {
+			"ClassifierSelection": {
+				"AllPolymers": {
+					"7_Aug_HDPE_Black": 0,
+					"7_Aug_HDPE_Blue": 1,
+					"7_Aug_HDPE_Green": 0,
+					"7_Aug_HDPE_Like_Blue_Milky": 0,
+					"7_Aug_HDPE_Milky": 1,
+					"7_Aug_HDPE_Natural_HD": 0,
+					"7_Aug_HDPE_Red": 0,
+					"7_Aug_HDPE_Silver": 0,
+					"7_Aug_HDPE_Yellow": 0,
+					"7_Aug_LDPE_Natural": 0,
+					"7_Aug_PET_Black_Brown_Bottle": 0,
+					"7_Aug_PET_Blue_Bottle": -1,
+					"7_Aug_PET_Cans": 0,
+					"7_Aug_PET_Green_Bottle": 0,
+					"7_Aug_PET_Jar": 0,
+					"7_Aug_PET_Natural_Bottle": 0,
+					"7_Aug_PET_Red_Bottle": 0,
+					"7_Aug_PET_White_Bottle": 0,
+					"7_Aug_PET_Yellow_Bottle": 0,
+					"7_Aug_PP_Black_Container": 0,
+					"7_Aug_PP_Black_Tray": 0,
+					"7_Aug_PP_Bottle_Mix": 0,
+					"7_Aug_PP_Daat_Mix": 0,
+					"7_Aug_PP_Farra": 0,
+					"7_Aug_PP_Natural_Daat": 0,
+					"7_Aug_PP_Natural_Jar_Bottle": 0,
+					"7_Aug_PP_White_Bottle": 0,
+					"7_Aug_PP_White_Daat_Container": 0,
+					"7_Aug_PP_White_Tray": -1,
+					"7_Aug_PVC": 0,
+					"7_Aug_Thermos": 0
+				},
+				"Label_Unlabel": {
+					"Label_Unlabel_Labelled": 1
+				}
+			},
+			"DetectionFlags": {
+				"objectDetection": true,
+				"colorDetection": true
+			}
+		},
+		"Recipe_3": {
+			"ClassifierSelection": {
+				"AllPolymers": {
+					"7_Aug_HDPE_Black": 0,
+					"7_Aug_HDPE_Blue": 0,
+					"7_Aug_HDPE_Green": 0,
+					"7_Aug_HDPE_Like_Blue_Milky": 0,
+					"7_Aug_HDPE_Milky": -1,
+					"7_Aug_HDPE_Natural_HD": 0,
+					"7_Aug_HDPE_Red": 0,
+					"7_Aug_HDPE_Silver": 0,
+					"7_Aug_HDPE_Yellow": 0,
+					"7_Aug_LDPE_Natural": 0,
+					"7_Aug_PET_Black_Brown_Bottle": 0,
+					"7_Aug_PET_Blue_Bottle": -1,
+					"7_Aug_PET_Cans": 0,
+					"7_Aug_PET_Green_Bottle": 0,
+					"7_Aug_PET_Jar": 0,
+					"7_Aug_PET_Natural_Bottle": 0,
+					"7_Aug_PET_Red_Bottle": 0,
+					"7_Aug_PET_White_Bottle": 0,
+					"7_Aug_PET_Yellow_Bottle": 0,
+					"7_Aug_PP_Black_Container": 0,
+					"7_Aug_PP_Black_Tray": -1,
+					"7_Aug_PP_Bottle_Mix": 0,
+					"7_Aug_PP_Daat_Mix": 1,
+					"7_Aug_PP_Farra": 1,
+					"7_Aug_PP_Natural_Daat": 0,
+					"7_Aug_PP_Natural_Jar_Bottle": 1,
+					"7_Aug_PP_White_Bottle": 0,
+					"7_Aug_PP_White_Daat_Container": 0,
+					"7_Aug_PP_White_Tray": 1,
+					"7_Aug_PVC": 0,
+					"7_Aug_Thermos": 0
+				},
+				"Label_Unlabel": {
+					"Label_Unlabel_Labelled": 0
+				}
+			},
+			"DetectionFlags": {
+				"objectDetection": true,
+				"colorDetection": true
+			}
+		},
+		"Recipe_4": {
+			"ClassifierSelection": {
+				"AllPolymers": {
+					"7_Aug_HDPE_Black": 0,
+					"7_Aug_HDPE_Blue": 1,
+					"7_Aug_HDPE_Green": 0,
+					"7_Aug_HDPE_Like_Blue_Milky": 0,
+					"7_Aug_HDPE_Milky": 0,
+					"7_Aug_HDPE_Natural_HD": 0,
+					"7_Aug_HDPE_Red": 0,
+					"7_Aug_HDPE_Silver": 0,
+					"7_Aug_HDPE_Yellow": 0,
+					"7_Aug_LDPE_Natural": 0,
+					"7_Aug_PET_Black_Brown_Bottle": 0,
+					"7_Aug_PET_Blue_Bottle": 0,
+					"7_Aug_PET_Cans": 0,
+					"7_Aug_PET_Green_Bottle": 0,
+					"7_Aug_PET_Jar": 0,
+					"7_Aug_PET_Natural_Bottle": 0,
+					"7_Aug_PET_Red_Bottle": 0,
+					"7_Aug_PET_White_Bottle": 0,
+					"7_Aug_PET_Yellow_Bottle": 0,
+					"7_Aug_PP_Black_Container": 0,
+					"7_Aug_PP_Black_Tray": 0,
+					"7_Aug_PP_Bottle_Mix": 1,
+					"7_Aug_PP_Daat_Mix": -1,
+					"7_Aug_PP_Farra": 0,
+					"7_Aug_PP_Natural_Daat": 1,
+					"7_Aug_PP_Natural_Jar_Bottle": 1,
+					"7_Aug_PP_White_Bottle": 0,
+					"7_Aug_PP_White_Daat_Container": 0,
+					"7_Aug_PP_White_Tray": 0,
+					"7_Aug_PVC": -1,
+					"7_Aug_Thermos": -1
+				},
+				"Label_Unlabel": {
+					"Label_Unlabel_Labelled": 0
+				}
+			},
+			"DetectionFlags": {
+				"objectDetection": false,
+				"colorDetection": true
+			}
+		},
+		"Recipe_5": {
+			"ClassifierSelection": {
+				"AllPolymers": {
+					"7_Aug_HDPE_Black": 0,
+					"7_Aug_HDPE_Blue": 1,
+					"7_Aug_HDPE_Green": 0,
+					"7_Aug_HDPE_Like_Blue_Milky": 0,
+					"7_Aug_HDPE_Milky": 1,
+					"7_Aug_HDPE_Natural_HD": 0,
+					"7_Aug_HDPE_Red": 0,
+					"7_Aug_HDPE_Silver": 0,
+					"7_Aug_HDPE_Yellow": 0,
+					"7_Aug_LDPE_Natural": 0,
+					"7_Aug_PET_Black_Brown_Bottle": 0,
+					"7_Aug_PET_Blue_Bottle": -1,
+					"7_Aug_PET_Cans": 0,
+					"7_Aug_PET_Green_Bottle": 0,
+					"7_Aug_PET_Jar": 0,
+					"7_Aug_PET_Natural_Bottle": 0,
+					"7_Aug_PET_Red_Bottle": 0,
+					"7_Aug_PET_White_Bottle": 0,
+					"7_Aug_PET_Yellow_Bottle": 0,
+					"7_Aug_PP_Black_Container": 0,
+					"7_Aug_PP_Black_Tray": 0,
+					"7_Aug_PP_Bottle_Mix": 0,
+					"7_Aug_PP_Daat_Mix": 0,
+					"7_Aug_PP_Farra": 0,
+					"7_Aug_PP_Natural_Daat": 0,
+					"7_Aug_PP_Natural_Jar_Bottle": 0,
+					"7_Aug_PP_White_Bottle": 0,
+					"7_Aug_PP_White_Daat_Container": 0,
+					"7_Aug_PP_White_Tray": -1,
+					"7_Aug_PVC": 0,
+					"7_Aug_Thermos": 0
+				},
+				"Label_Unlabel": {
+					"Label_Unlabel_Labelled": 1
+				}
+			},
+			"DetectionFlags": {
+				"objectDetection": true,
+				"colorDetection": true
+			}
+		},
+		"Recipe_6": {
+			"ClassifierSelection": {
+				"AllPolymers": {
+					"7_Aug_HDPE_Black": 0,
+					"7_Aug_HDPE_Blue": 0,
+					"7_Aug_HDPE_Green": 0,
+					"7_Aug_HDPE_Like_Blue_Milky": 0,
+					"7_Aug_HDPE_Milky": -1,
+					"7_Aug_HDPE_Natural_HD": 0,
+					"7_Aug_HDPE_Red": 0,
+					"7_Aug_HDPE_Silver": 0,
+					"7_Aug_HDPE_Yellow": 0,
+					"7_Aug_LDPE_Natural": 0,
+					"7_Aug_PET_Black_Brown_Bottle": 0,
+					"7_Aug_PET_Blue_Bottle": -1,
+					"7_Aug_PET_Cans": 0,
+					"7_Aug_PET_Green_Bottle": 0,
+					"7_Aug_PET_Jar": 0,
+					"7_Aug_PET_Natural_Bottle": 0,
+					"7_Aug_PET_Red_Bottle": 0,
+					"7_Aug_PET_White_Bottle": 0,
+					"7_Aug_PET_Yellow_Bottle": 0,
+					"7_Aug_PP_Black_Container": 0,
+					"7_Aug_PP_Black_Tray": -1,
+					"7_Aug_PP_Bottle_Mix": 0,
+					"7_Aug_PP_Daat_Mix": 1,
+					"7_Aug_PP_Farra": 1,
+					"7_Aug_PP_Natural_Daat": 0,
+					"7_Aug_PP_Natural_Jar_Bottle": 1,
+					"7_Aug_PP_White_Bottle": 0,
+					"7_Aug_PP_White_Daat_Container": 0,
+					"7_Aug_PP_White_Tray": 1,
+					"7_Aug_PVC": 0,
+					"7_Aug_Thermos": 0
+				},
+				"Label_Unlabel": {
+					"Label_Unlabel_Labelled": 0
+				}
+			},
+			"DetectionFlags": {
+				"objectDetection": true,
+				"colorDetection": true
+			}
+		}
+	}
+}
