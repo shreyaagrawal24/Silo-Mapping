@@ -57,7 +57,7 @@ void MainWindow::loadJSONData(const std::string &jsonFilePath1, const std::strin
     std::ifstream recipeSelectionFile(jsonFilePath2);
     if(!recipeSelectionFile.is_open())
     {
-        qDebug() << "Error opening JSON file ";
+        qDebug() << "Error opening JSON file 2";
         return;
     }
 
