@@ -102,7 +102,7 @@ void MainWindow::updateJSONData(const std::string &jsonFilePath)
     {
         inputSanjivaniFile >> jsonObject;
         inputSanjivaniFile.close();
-        jsonObject["sanjivaniSiloMap"].clear();
+        jsonObject.at("sanjivaniSiloMap").clear();
 
         for(std::vector<QWidget*>::size_type i = 0; i < silos.size(); ++i)
         {
