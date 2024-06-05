@@ -123,7 +123,7 @@ private:
     std::vector<QWidget*> silos; /**< Vector storing pointers to silo widgets */
     std::vector<QPushButton*> recipes; /**< Vector storing pointers to recipe buttons */
     QString clickedSiloRecipe; /**< Recipe associated with the last clicked silo */
-    bool initialDisplay = true; /**< Flag used for initial display through the JSON file */
+    bool initialDisplay; /**< Flag used for initial display through the JSON file */
 };
 
 #endif // MAINWINDOW_H

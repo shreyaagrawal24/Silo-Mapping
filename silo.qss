@@ -126,6 +126,12 @@ QWidget [silo = "clicked"] {
     border-radius: 10px;
 }
 
+/* Styles for disabled clear recipe button */
+#clearRecipeBtn:disabled {
+    background-color: #D3D3D3;
+    color: black;
+}
+
 /* Styles for add and remove silo widget */
 #addRemSilosWidget {
     border: 1px solid black;
@@ -160,11 +166,23 @@ QWidget [silo = "clicked"] {
     border-radius: 10px;
 }
 
+/* Styles for disabled remove button */
+#removeBtn:disabled {
+    background-color: #D3D3D3;
+    color: black;
+}
+
 /* Styles for add button */
 #addBtn {
     background-color: rgb(199, 255, 155);
     border: none;
     border-radius: 10px;
+}
+
+/* Styles for disabled add button */
+#addBtn:disabled {
+    background-color: #D3D3D3;
+    color: black;
 }
 
 /* Styles for reset button */
@@ -173,9 +191,24 @@ QWidget [silo = "clicked"] {
     border-radius: 10px;
 }
 
+/* Styles for disabled reset button */
+#resetBtn:disabled {
+    background-color: #D3D3D3;
+    color: black;
+}
+
 /* Styles for save button */
 #saveBtn {
     background-color: rgb(199, 255, 155);
     border-radius: 10px;
 }
+
+/* Styles for disabled save button */
+#saveBtn:disabled {
+    background-color: #D3D3D3;
+    color: black;
+}
+
+
+
 

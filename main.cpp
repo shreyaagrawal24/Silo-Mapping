@@ -17,9 +17,9 @@ int main(int argc, char *argv[])
     }
     else
     {
-        QString style( styleFile.readAll());
+        QString style(styleFile.readAll());
         styleFile.close();
-        a.setStyleSheet( style );
+        a.setStyleSheet(style);
     }
     return a.exec();
 }

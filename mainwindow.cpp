@@ -15,9 +15,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     windowSize = QGuiApplication::screens().at(0)->size();
 
-    ui->clearRecipeBtn->setEnabled(false);
-    ui->removeBtn->setEnabled(false);
-
     initialDisplay = true;
 
     displaySilos();
@@ -51,13 +48,13 @@ void MainWindow::loadJSONData(const std::string &jsonFilePath1, const std::strin
     std::ifstream sanjivaniFile(jsonFilePath1);
     if(!sanjivaniFile.is_open())
     {
-        qDebug() << "Error opening JSON file 1";
+        qDebug() << "Error opening sanjivani JSON file.";
         return;
     }
     std::ifstream recipeSelectionFile(jsonFilePath2);
     if(!recipeSelectionFile.is_open())
     {
-        qDebug() << "Error opening JSON file 2";
+        qDebug() << "Error opening recipeSelection JSON file.";
         return;
     }
 
@@ -83,7 +80,7 @@ void MainWindow::loadJSONData(const std::string &jsonFilePath1, const std::strin
     }
     catch(const std::exception& e)
     {
-        qDebug() << "Error parsing JSON file" << e.what();
+        qDebug() << "Error parsing JSON file: " << e.what();
         return;
     }
 }
@@ -144,7 +141,7 @@ void MainWindow::updateJSONData(const std::string &jsonFilePath)
     }
     catch (const std::exception &e)
     {
-        qDebug() << "Error parsing JSON file:" << e.what();
+        qDebug() << "Error parsing JSON file: " << e.what();
         return;
     }
 }
@@ -196,7 +193,7 @@ void MainWindow::displaySilos()
         }
         catch (const std::exception &e)
         {
-            qDebug() << "Error parsing JSON file:" << e.what();
+            qDebug() << "Error parsing JSON file: " << e.what();
             return;
         }
         initialDisplay = false;
@@ -283,6 +280,8 @@ void MainWindow::onSiloClicked(QWidget* clickedSilo)
     ui->clearRecipeBtn->setEnabled(true);
     ui->removeBtn->setEnabled(true);
     ui->addBtn->setEnabled(false);
+    ui->resetBtn->setEnabled(false);
+    ui->saveBtn->setEnabled(false);
     for(QWidget *silo:silos)
     {
         silo->setEnabled(false);
@@ -320,6 +319,7 @@ void MainWindow::displayRecipes()
             QLabel *recipeLabel2 = new QLabel(recipeButton); //recipe label of the recipe button
             recipeLabel2->setObjectName("recipeLabel2");
             recipeLabel2->setText(QString::fromStdString(recipe.key()));
+            recipeLabel2->setToolTip(QString::fromStdString(recipe.key()));
 
             bool connectedToSilo = false;
             std::string silo = "None";
@@ -413,11 +413,14 @@ void MainWindow::onRecipeClicked()
         {
             recipeLabel->setText(recipeName + "   ");
         }
+        ui->resetBtn->setEnabled(true);
+        ui->saveBtn->setEnabled(true);
     }
 
     ui->clearRecipeBtn->setEnabled(false);
     ui->removeBtn->setEnabled(false);
     ui->addBtn->setEnabled(true);
+
     for(QWidget* silo : silos)
     {
         silo->setEnabled(true);
@@ -452,6 +455,9 @@ void MainWindow::onClearRecipeBtnClicked()
     ui->clearRecipeBtn->setEnabled(false);
     ui->removeBtn->setEnabled(false);
     ui->addBtn->setEnabled(true);
+    ui->resetBtn->setEnabled(true);
+    ui->saveBtn->setEnabled(true);
+
     if(!lastClickedSilo)
     {
         return;
@@ -479,6 +485,8 @@ void MainWindow::onRemoveBtnClicked()
     ui->clearRecipeBtn->setEnabled(false);
     ui->removeBtn->setEnabled(false);
     ui->addBtn->setEnabled(true);
+    ui->resetBtn->setEnabled(true);
+    ui->saveBtn->setEnabled(true);
 
     if(lastClickedSilo)
     {
@@ -514,6 +522,8 @@ void MainWindow::onRemoveBtnClicked()
 
 void MainWindow::onAddBtnClicked()
 {
+    ui->resetBtn->setEnabled(true);
+    ui->saveBtn->setEnabled(true);
     if(ui->silosLayout->count() >= ui->recipeListLayout->count() - 1)
     {
         QMessageBox::critical(this, "Error", "Number of silos can't be greater than number of recipes available.");
@@ -527,6 +537,8 @@ void MainWindow::onAddBtnClicked()
 
 void MainWindow::onResetBtnClicked()
 {
+    ui->resetBtn->setEnabled(false);
+
     for (QWidget* silo : silos)
     {
         silo->setGraphicsEffect(nullptr);
@@ -548,11 +560,11 @@ void MainWindow::onResetBtnClicked()
     {
         silo->setEnabled(true);
     }
-    lastClickedSilo = nullptr;
 }
 
 void MainWindow::onSaveBtnClicked()
 {
+    ui->saveBtn->setEnabled(false);
     QMessageBox::information(this, "Congrats", "The JSON file has been updated!");
     updateJSONData(SanjivaniJSON);
 }
